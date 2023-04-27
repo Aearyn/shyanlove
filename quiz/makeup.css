@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-image: linear-gradient(to bottom right, #FFFFF0, #F9F6EE, #EDEADE);
+    image-rendering: optimizeQuality;
+}
+/* Navbar */
+.navbar{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 99%;
+  background-color: #88AAFF;
+  margin-top: 2px;
+  margin-left: 2px;
+  margin-right: 2px;
+  border-radius: 13px;
+  padding: 3px;
+  overflow-x: hidden;
+}
+
+/* Main Quiz Area */
+#div-container{
+    margin-top: 150px;
+    display: grid;
+    grid-template-columns: 200px calc(77vw - 200px);
+    background-color: #88AAFF;
+    width: 77%;
+    height: 60vh;
+    position: absolute;
+    left: 9%;
+    box-shadow: 4px 4px blue;
+    border-radius: 13px;
+    padding: 17px;
+}
+
+.grid-item{
+    margin-top: 20px;
+    position: relative;
+}
+
+#grid-item{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-top: 20px;
+    background-color: #88AAFF;
+    box-shadow: 1px 0.5px #6666FF;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+#grid-item >a{
+    text-decoration: none;
+    font-size: 18px;
+    /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+}
+
+#grid-item >a:link{
+    color: white;
+}
+
+#grid-item >a:hover{
+    background-color: #7788EE;
+    border-radius: 13px;
+}
+
+#grid-item >a:visited{
+    color: lime;
+}
+
+#grid-item-form{
+   background-color: blue;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   width: 70%;
+   transform: translate(-50%,-50%);
+   height: 30vh;
+   /* border-radius: 13px; */
+   padding: 25px;
+    background-color: #6666FF;
+    overflow-y: scroll;
+}
+
+#formitem{
+    font-size: 25px;
+    border-bottom: 2px solid white;
+}
+
+.formbuttons{
+    font-size: 17px;
+    margin-top: 14px;
+}
+
+.nxt{
+    padding: 14px;
+    position: relative;
+}
+
+@media only screen and (max-width:1366px) {
+    #div-container{
+        margin-top: 110px;
+        height: 90vh;
+    }
+}
+
+.correct-answer + span{
+    background: lime;
+}

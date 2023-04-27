@@ -1,0 +1,100 @@
+*{
+    
+    margin:0;
+    padding:0;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Navbar */
+.wrapper{
+    height: 80vh;
+    background: url(img/pexels-pixabay-50987.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.navbar{
+    background-color: #88AAFF;
+    width: 2%;
+    height: 18vh;
+    display: flex;
+    flex-direction: column;
+    border-radius: 12px;
+    margin-left: 5px;
+    align-items: center;
+    padding-top: 9px;
+}
+
+.wrapper>span{
+    font-size: 50px;
+    background-color: #88AAFF;
+    margin-left: 10px;
+    padding: 10px;
+    border-bottom: 10px solid white;
+    border-top: 10px solid white;
+}
+
+main{
+    position: relative;
+}
+
+/* payment bill */
+/* header */
+.header >span{
+    font-size: 40px;
+    position: absolute;
+    left: 10%;
+    background-color: #88AAFF;
+    padding: 8px;
+}
+
+/* the graph thingy */
+.accdetails >table{
+    position: absolute;
+    left: 10%;
+    background-color: #88AAFF;
+    padding: 20px;
+    border-radius: 44px;
+    overflow-x: hidden;
+    width: 50vw;
+}
+
+#graph{
+    border-radius: 360px;
+}
+
+/* actual payment */
+
+
+.payment-form >table{
+    position: absolute;
+    left: 10%;
+    border: 5px solid blue;
+    border-radius: 14px;
+    padding: 13px;
+    background-color: #88AAFF;
+    box-shadow: 10px 10px blue;
+
+}
+
+.payment-form >table >th,td{
+    padding: 17px;
+}
+
+.submit >button{
+    padding: 17px;
+    text-align: center;
+    background-color: red;
+    color: white;
+    left: 29%;
+    position: absolute;
+}
+
+.submit >button:hover{
+    text-transform: uppercase;
+    /* font-size: 20px; */
+    background-color: lime;
+    font-weight: bold;
+    text-decoration: underline;
+}
